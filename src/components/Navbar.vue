@@ -28,7 +28,7 @@
                 </div>
             </div>
         </nav>
-        <div className="max-w-7xl mx-auto flex items-center justify-center py-2 bg-black text-white font-bold">Shop 40$ Free delivery</div>
+        <div className="max-w-7xl  mx-auto flex items-center justify-center py-2 bg-black text-white font-bold">Shop 40$ Free delivery</div>
     </div>
 </template>
 <script setup>
