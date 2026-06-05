@@ -1,11 +1,11 @@
 
 <template lang="">
     <div className="w-full">
-        <div className="sticky top-0 z-10 bg-white">
+        <div className=" bg-white">
             <nav className="w-full max-w-7xl max-h-18 mx-auto flex md:justify-between justify-end items-center py-3 px-3 md:px-2 lg:px-0">
                 <div className=" items-center gap-3 md:gap-6 px-2 py-2 hidden md:flex">
                     <a className="font-medium md:text-md lg:text-lg uppercase text-sm" href="">Women</a>
-                    <a className="font-medium md:text-md lg:text-lg uppercase" text-sm href="">Man</a>
+                    <a className="font-medium md:text-md lg:text-lg uppercase" text-sm href="/man">Man</a>
                     <a className="font-medium md:text-md lg:text-lg uppercase" text-sm href="">Z.home</a>
                     <a className="font-medium md:text-md lg:text-lg uppercase" text-sm href="">LiftStyle</a>
                     
@@ -33,7 +33,8 @@
                 </div>
             </nav>
         </div>
-        <div className="max-w-7xl mx-auto flex items-center justify-center py-2 bg-black text-white font-bold">Shop 40$ Free delivery</div>
+        <div v-if="route.path=='/'" className="max-w-7xl mx-auto flex items-center justify-center py-2 bg-black text-white font-bold">Shop 40$ Free delivery</div>
+
         <div :class="['w-[80%] z-20 min-h-screen bg-white/40 backdrop-blur-2xl fixed top-0 left-0 transition-all ease-in-out',openSideBar ? 'translate-x-0' : '-translate-x-full']">
             <div className="w-full min-h-11  border-b-2 border-b-olive-400 flex justify-between items-center p-4">
                 <div className="w-20">
@@ -60,9 +61,12 @@
 </template>
 <script setup>
     import { ref } from 'vue';
-import Logo from '../assets/Logo.png'
+    import Logo from '../assets/Logo.png'
     import Banner from '../assets/banner.jpg'
+    import { useRoute } from 'vue-router';
     const openSideBar=ref(false)
+    const route=useRoute()
+    console.log(route.path)
 </script>
 <style scoped>
     

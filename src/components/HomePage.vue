@@ -1,6 +1,5 @@
 <template lang="">
-    <div className="max-w-7xl mx-auto pb-20">
-        <Navbar/>
+    <div>
         <Baner/>
         <LogoSlide/>
         <SlideBanner/>
