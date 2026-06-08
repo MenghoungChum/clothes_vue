@@ -10,6 +10,35 @@ import banner1 from "../assets/banner1.jpg"
 import banner2 from "../assets/banner2.jpg"
 import banner3 from "../assets/banner3.jpg"
 
+import Long_Sleeve_Fitted_Shirt_white1 from '../assets/Long_Sleeve_Fitted_Shirt_white1.jpg'
+import Long_Sleeve_Fitted_Shirt_white2 from '../assets/Long_Sleeve_Fitted_Shirt_white2.jpg'
+import Long_Sleeve_Fitted_Shirt_white3 from '../assets/Long_Sleeve_Fitted_Shirt_white3.jpg'
+import Long_Sleeve_Fitted_Shirt_white4 from '../assets/Long_Sleeve_Fitted_Shirt_white4.jpg'
+import Long_Sleeve_Fitted_Shirt_white5 from '../assets/Long_Sleeve_Fitted_Shirt_white5.jpg'
+import Long_Sleeve_Fitted_Shirt_white6 from '../assets/Long_Sleeve_Fitted_Shirt_white6.jpg'
+import Short_Sleeve_Shirt1 from "../assets/Short_Sleeve_Shirt1.jpg"
+import Short_Sleeve_Shirt2  from "../assets/Short_Sleeve_Shirt2.jpg"
+import Short_Sleeve_Shirt3 from "../assets/Short_Sleeve_Shirt3.jpg"
+import Short_Sleeve_Shirt4 from "../assets/Short_Sleeve_Shirt4.jpg"
+import Short_Sleeve_Shirt5 from "../assets/Short_Sleeve_Shirt5.jpg"
+import Laced_Top1 from '../assets/Laced_Top1.jpg'
+import Laced_Top2 from '../assets/Laced_Top2.jpg'
+import Laced_Top3 from '../assets/Laced_Top3.jpg'
+import Laced_Top4 from '../assets/Laced_Top4.jpg'
+import Laced_Top5 from '../assets/Laced_Top5.jpg'
+import Loose_Fitted_Shirt1 from '../assets/Loose_Fitted_Shirt1.jpg'
+import Loose_Fitted_Shirt2 from '../assets/Loose_Fitted_Shirt2.jpg'
+import Loose_Fitted_Shirt3 from '../assets/Loose_Fitted_Shirt3.jpg'
+import Loose_Fitted_Shirt4 from '../assets/Loose_Fitted_Shirt4.jpg'
+import Loose_Fitted_Shirt5 from '../assets/Loose_Fitted_Shirt5.jpg'
+ 
+import lifeStyle from "../assets/lifeStyle.jpg"
+import sportLife from "../assets/sportLife.jpg"
+import smartCasual from '../assets/smartCasual.jpg'
+import tops from '../assets/tops.jpg'
+import softLiving from '../assets/softLiving.jpg'
+import shoes from '../assets/shoes.jpg'
+
 export const brandSlide=[
     {
         id: 1,
@@ -57,170 +86,208 @@ export const bannerData=[
     }
 ]
 
+export const categories=[
+    {
+        id: 1,
+        image: lifeStyle
+    },
+    {
+        id: 2,
+        image: sportLife
+    },
+    {
+        id: 3,
+        image: smartCasual
+    },
+    {
+        id: 4,
+        image: tops
+    },
+    {
+        id: 5,
+        image: softLiving
+    },
+    {
+        id: 6,
+        image: shoes
+    },
+]
 
 
-// const products = [
-//   {
-//     id: 1,
-//     name: "Patch Printed T-Shirt",
-//     price: 16.95,
-//     currency: "USD",
-//     description: "Streetwear patch printed oversized T-shirt with modern faded design.",
 
-//     colors: [
-//       {
-//         name: "Black",
-//         value: "#000000",
-//         images: [
-//           "/images/black-1.jpg",
-//           "/images/black-2.jpg",
-//           "/images/black-3.jpg"
-//         ]
-//       },
-//       {
-//         name: "Purple",
-//         value: "#6a5acd",
-//         images: [
-//           "/images/purple-1.jpg",
-//           "/images/purple-2.jpg",
-//           "/images/purple-3.jpg"
-//         ]
-//       }
-//     ],
+export const products = [
+  {
+    id: 1,
+    name: "Patch Printed T-Shirt",
+    price: 16.95,
+    currency: "USD",
+    description: "Streetwear patch printed oversized T-shirt with modern faded design.",
 
-//     sizes: ["S", "M", "L", "XL", "XXL"],
-//     defaultColor: "Purple",
-//     defaultSize: "M",
-//     rating: 4.6,
-//     reviewsCount: 120,
-//     inStock: true,
-//     category: "T-Shirt",
-//     brand: "Street Wear",
-//     images: [
-//       "/images/main-1.jpg",
-//       "/images/main-2.jpg",
-//       "/images/main-3.jpg"
-//     ]
-//   },
+    colors: [
+      {
+        name: "Black",
+        value: "#000000",
+        images: [
+          Long_Sleeve_Fitted_Shirt_white1,
+          Long_Sleeve_Fitted_Shirt_white2,
+          Long_Sleeve_Fitted_Shirt_white3,
+          Long_Sleeve_Fitted_Shirt_white4,
+          Long_Sleeve_Fitted_Shirt_white5,
+          Long_Sleeve_Fitted_Shirt_white6
+        ]
+      },
+      {
+        name: "Purple",
+        value: "#6a5acd",
+        images: [
+          "/images/purple-1.jpg",
+          "/images/purple-2.jpg",
+          "/images/purple-3.jpg"
+        ]
+      }
+    ],
 
-//   {
-//     id: 2,
-//     name: "Minimal Logo Hoodie",
-//     price: 29.99,
-//     currency: "USD",
-//     description: "Cozy oversized hoodie with minimal chest logo for everyday wear.",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    defaultColor: "Purple",
+    defaultSize: "M",
+    rating: 4.6,
+    reviewsCount: 120,
+    inStock: true,
+    category: "T-Shirt",
+    brand: "Street Wear",
+    images: [
+      "/images/main-1.jpg",
+      "/images/main-2.jpg",
+      "/images/main-3.jpg"
+    ]
+  },
 
-//     colors: [
-//       {
-//         name: "Gray",
-//         value: "#808080",
-//         images: [
-//           "/images/gray-hoodie-1.jpg",
-//           "/images/gray-hoodie-2.jpg"
-//         ]
-//       },
-//       {
-//         name: "Black",
-//         value: "#000000",
-//         images: [
-//           "/images/black-hoodie-1.jpg",
-//           "/images/black-hoodie-2.jpg"
-//         ]
-//       }
-//     ],
+  {
+    id: 2,
+    name: "Minimal Logo Hoodie",
+    price: 29.99,
+    currency: "USD",
+    description: "Cozy oversized hoodie with minimal chest logo for everyday wear.",
 
-//     sizes: ["S", "M", "L", "XL"],
-//     defaultColor: "Black",
-//     defaultSize: "L",
-//     rating: 4.8,
-//     reviewsCount: 250,
-//     inStock: true,
-//     category: "Hoodie",
-//     brand: "Urban Fit",
-//     images: [
-//       "/images/hoodie-main-1.jpg",
-//       "/images/hoodie-main-2.jpg"
-//     ]
-//   },
+    colors: [
+      {
+        name: "Gray",
+        value: "#808080",
+        images: [
+          Short_Sleeve_Shirt1,
+          Short_Sleeve_Shirt2,
+          Short_Sleeve_Shirt3,
+          Short_Sleeve_Shirt4,
+          Short_Sleeve_Shirt5
+        ]
+      },
+      {
+        name: "Black",
+        value: "#000000",
+        images: [
+          "/images/black-hoodie-1.jpg",
+          "/images/black-hoodie-2.jpg"
+        ]
+      }
+    ],
 
-//   {
-//     id: 3,
-//     name: "Slim Fit Jeans",
-//     price: 39.5,
-//     currency: "USD",
-//     description: "Modern slim-fit denim jeans with stretch comfort fabric.",
+    sizes: ["S", "M", "L", "XL"],
+    defaultColor: "Black",
+    defaultSize: "L",
+    rating: 4.8,
+    reviewsCount: 250,
+    inStock: true,
+    category: "Hoodie",
+    brand: "Urban Fit",
+    images: [
+      
+    ]
+  },
 
-//     colors: [
-//       {
-//         name: "Blue",
-//         value: "#1e3a8a",
-//         images: [
-//           "/images/blue-jeans-1.jpg",
-//           "/images/blue-jeans-2.jpg"
-//         ]
-//       },
-//       {
-//         name: "Black",
-//         value: "#000000",
-//         images: [
-//           "/images/black-jeans-1.jpg",
-//           "/images/black-jeans-2.jpg"
-//         ]
-//       }
-//     ],
+  {
+    id: 3,
+    name: "Slim Fit Jeans",
+    price: 39.5,
+    currency: "USD",
+    description: "Modern slim-fit denim jeans with stretch comfort fabric.",
 
-//     sizes: ["28", "30", "32", "34", "36"],
-//     defaultColor: "Blue",
-//     defaultSize: "32",
-//     rating: 4.5,
-//     reviewsCount: 310,
-//     inStock: true,
-//     category: "Jeans",
-//     brand: "Denim Co",
-//     images: [
-//       "/images/jeans-main-1.jpg",
-//       "/images/jeans-main-2.jpg",
-//       "/images/jeans-main-3.jpg"
-//     ]
-//   },
+    colors: [
+      {
+        name: "Blue",
+        value: "#1e3a8a",
+        images: [
+            Laced_Top1,
+            Laced_Top2,
+            Laced_Top3,
+            Laced_Top4,
+            Laced_Top5
+        ]
+      },
+      {
+        name: "Black",
+        value: "#000000",
+        images: [
+          "/images/black-jeans-1.jpg",
+          "/images/black-jeans-2.jpg"
+        ]
+      }
+    ],
 
-//   {
-//     id: 4,
-//     name: "Classic Sneakers",
-//     price: 49.99,
-//     currency: "USD",
-//     description: "Comfortable everyday sneakers with breathable mesh design.",
+    sizes: ["28", "30", "32", "34", "36"],
+    defaultColor: "Blue",
+    defaultSize: "32",
+    rating: 4.5,
+    reviewsCount: 310,
+    inStock: true,
+    category: "Jeans",
+    brand: "Denim Co",
+    images: [
+      "/images/jeans-main-1.jpg",
+      "/images/jeans-main-2.jpg",
+      "/images/jeans-main-3.jpg"
+    ]
+  },
 
-//     colors: [
-//       {
-//         name: "White",
-//         value: "#ffffff",
-//         images: [
-//           "/images/white-sneaker-1.jpg",
-//           "/images/white-sneaker-2.jpg"
-//         ]
-//       },
-//       {
-//         name: "Black",
-//         value: "#000000",
-//         images: [
-//           "/images/black-sneaker-1.jpg",
-//           "/images/black-sneaker-2.jpg"
-//         ]
-//       }
-//     ],
+  {
+    id: 4,
+    name: "Classic Sneakers",
+    price: 49.99,
+    currency: "USD",
+    description: "Comfortable everyday sneakers with breathable mesh design.",
 
-//     sizes: ["38", "39", "40", "41", "42", "43", "44"],
-//     defaultColor: "White",
-//     defaultSize: "41",
-//     rating: 4.7,
-//     reviewsCount: 540,
-//     inStock: true,
-//     category: "Shoes",
-//     brand: "StepUp",
-//     images: [
-//       "/images/sneaker-main-1.jpg",
-//       "/images/sneaker-main-2.jpg"
-//     ]
-//   }
-// ];
+    colors: [
+      {
+        name: "White",
+        value: "#ffffff",
+        images: [
+          Loose_Fitted_Shirt1,
+          Loose_Fitted_Shirt2,
+          Loose_Fitted_Shirt3,
+          Loose_Fitted_Shirt4,
+          Loose_Fitted_Shirt5
+        ]
+      },
+      {
+        name: "Black",
+        value: "#000000",
+        images: [
+          "/images/black-sneaker-1.jpg",
+          "/images/black-sneaker-2.jpg"
+        ]
+      }
+    ],
+
+    sizes: ["38", "39", "40", "41", "42", "43", "44"],
+    defaultColor: "White",
+    defaultSize: "41",
+    rating: 4.7,
+    reviewsCount: 540,
+    inStock: true,
+    category: "Shoes",
+    brand: "StepUp",
+    images: [
+      "/images/sneaker-main-1.jpg",
+      "/images/sneaker-main-2.jpg"
+    ]
+  }
+];
