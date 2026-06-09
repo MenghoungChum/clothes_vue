@@ -1,29 +1,36 @@
 import HomePage from "../components/HomePage.vue";
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 import ManCategory from "../components/ManCategory.vue";
-import ShopLayout from "../components/Layouts/ShopLayout.vue";
+import DetailPage from "../components/DetailPage.vue";
+import WomanCategory from "../components/WomanCategory.vue";
+import LifeStyle from "../components/LifeStyle.vue";
 
-const routes=[
-    {
-        path: "/",
-        component: HomePage
-    },
-    {
-        path: "/",
-        component: ShopLayout,
-        children:[
-            {
-                path: "/man",
-                component: ManCategory
-            }
-        ]
-    }
-    
-]
+const routes = [
+  {
+    path: "/",
+    component: HomePage,
+  },
+  {
+    path: "/man",
+    component: ManCategory,
+  },
+  {
+    path: "/man/:id",
+    component: DetailPage,
+  },
+  {
+    path: "/woman",
+    component: WomanCategory,
+  },
+  {
+    path: '/lifeStyle',
+    component: LifeStyle
+  }
+];
 
-const router=createRouter({
-    history: createWebHistory(),
-    routes
-})
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
 
-export default router
+export default router;

@@ -119,6 +119,7 @@ export const products = [
   {
     id: 1,
     name: "Patch Printed T-Shirt",
+    section: "man",
     price: 16.95,
     currency: "USD",
     description: "Streetwear patch printed oversized T-shirt with modern faded design.",
@@ -166,6 +167,7 @@ export const products = [
     id: 2,
     name: "Minimal Logo Hoodie",
     price: 29.99,
+    section: "man",
     currency: "USD",
     description: "Cozy oversized hoodie with minimal chest logo for everyday wear.",
 
@@ -208,6 +210,7 @@ export const products = [
     id: 3,
     name: "Slim Fit Jeans",
     price: 39.5,
+    section: "man",
     currency: "USD",
     description: "Modern slim-fit denim jeans with stretch comfort fabric.",
 
@@ -252,6 +255,7 @@ export const products = [
     id: 4,
     name: "Classic Sneakers",
     price: 49.99,
+    section: "man",
     currency: "USD",
     description: "Comfortable everyday sneakers with breathable mesh design.",
 
@@ -291,3 +295,26 @@ export const products = [
     ]
   }
 ];
+
+export const navBar=[
+  {
+    id:1,
+    name: "Home",
+    path: "/"
+  },
+  {
+    id:2,
+    name: "Woman",
+    path: "/woman"
+  },
+  {
+    id:3,
+    name: "Man",
+    path: "/man"
+  },
+  {
+    id:4,
+    name: "Young",
+    path: "/young"
+  },
+]

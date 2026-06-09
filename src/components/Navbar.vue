@@ -4,10 +4,13 @@
         <div className=" bg-white">
             <nav className="w-full max-w-7xl max-h-18 mx-auto flex md:justify-between justify-end items-center py-3 px-3 md:px-2 lg:px-0">
                 <div className=" items-center gap-3 md:gap-6 px-2 py-2 hidden md:flex">
-                    <a className="font-medium md:text-md lg:text-lg uppercase text-sm" href="">Women</a>
-                    <a className="font-medium md:text-md lg:text-lg uppercase" text-sm href="/man">Man</a>
-                    <a className="font-medium md:text-md lg:text-lg uppercase" text-sm href="">Z.home</a>
-                    <a className="font-medium md:text-md lg:text-lg uppercase" text-sm href="">LiftStyle</a>
+                    <router-link 
+                    
+                    v-for="item in navBar" :key="item.id" 
+                    class="font-medium md:text-md lg:text-lg uppercase text-sm transition-all duration-200 ease-in-out" :to="item.path"
+                    @click="active=item.path"
+                    :class="active==item.path ? 'underline' :  ''"
+                    >{{ item.name}}</router-link>
                     
                 </div>
                 <div className="w-35 hidden lg:block">
@@ -64,9 +67,11 @@
     import Logo from '../assets/Logo.png'
     import Banner from '../assets/banner.jpg'
     import { useRoute } from 'vue-router';
+    import { navBar } from '../data/data';
     const openSideBar=ref(false)
     const route=useRoute()
-    console.log(route.path)
+    let active=ref("/");
+     
 </script>
 <style scoped>
     

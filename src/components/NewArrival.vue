@@ -13,6 +13,11 @@
     
     import ProductCard from './ProductCard.vue';
     import { products } from '../data/data.js';
+import { useRoute } from 'vue-router';
+    const route=useRoute()
+    function linkTo(id){
+        route.push(`/man/${id}`)
+    }
 </script>
 <style lang="">
     

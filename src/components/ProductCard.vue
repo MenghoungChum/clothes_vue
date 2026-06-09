@@ -1,6 +1,9 @@
 <template lang="">
     <div>
-        <div :key="product.id">
+        <RouterLink
+        :to="`/man/${product.id}`"
+        @click="gotoDetail(product.id)"
+        :key="product.id" class="cursor-pointer">
             <div className="h-105">
                 <img :src="product.colors[0].images[0]" alt="" className="w-full h-full object-cover">
             </div>
@@ -12,11 +15,12 @@
                 </div>
                 <i class="fa-regular fa-heart"></i>
             </div>
-        </div>
+        </RouterLink>
     </div>
 </template>
 <script setup>
-    import imageex from '../assets/imageex.jpg'
+    import { useRoute } from 'vue-router';
+import imageex from '../assets/imageex.jpg'
     defineProps({
         product: Object
     })

@@ -3,7 +3,6 @@
     
         <img v-for="cateeogry in categories" :key="cateeogry.id" :src="cateeogry.image" alt="" className="w-full h-full">
         
-    
     </div>
 </template>
 <script setup>

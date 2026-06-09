@@ -10,7 +10,6 @@ import Navbar from './components/Navbar.vue';
          <div class="sticky top-0 z-50 bg-white">
             <Navbar />
         </div>
-
         <router-view/>
     </div>
 </template>
