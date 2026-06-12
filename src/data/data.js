@@ -122,6 +122,7 @@ export const products = [
     section: "man",
     price: 16.95,
     currency: "USD",
+    discount: 10,
     description: "Streetwear patch printed oversized T-shirt with modern faded design.",
 
     colors: [
@@ -169,6 +170,7 @@ export const products = [
     price: 29.99,
     section: "man",
     currency: "USD",
+    discount: 5,
     description: "Cozy oversized hoodie with minimal chest logo for everyday wear.",
 
     colors: [
@@ -212,6 +214,7 @@ export const products = [
     price: 39.5,
     section: "man",
     currency: "USD",
+    discount: 15,
     description: "Modern slim-fit denim jeans with stretch comfort fabric.",
 
     colors: [
@@ -257,6 +260,7 @@ export const products = [
     price: 49.99,
     section: "man",
     currency: "USD",
+    discount: 50,
     description: "Comfortable everyday sneakers with breathable mesh design.",
 
     colors: [
@@ -281,7 +285,7 @@ export const products = [
       }
     ],
 
-    sizes: ["38", "39", "40", "41", "42", "43", "44"],
+    sizes: ["S", "M", "L", "XL"],
     defaultColor: "White",
     defaultSize: "41",
     rating: 4.7,
@@ -293,7 +297,95 @@ export const products = [
       "/images/sneaker-main-1.jpg",
       "/images/sneaker-main-2.jpg"
     ]
-  }
+  },
+  {
+    id: 5,
+    name: "Classic Sneakers",
+    price: 49.99,
+    section: "man",
+    currency: "USD",
+    discount: 10,
+    description: "Comfortable everyday sneakers with breathable mesh design.",
+
+    colors: [
+      {
+        name: "White",
+        value: "#ffffff",
+        images: [
+          Loose_Fitted_Shirt1,
+          Loose_Fitted_Shirt2,
+          Loose_Fitted_Shirt3,
+          Loose_Fitted_Shirt4,
+          Loose_Fitted_Shirt5
+        ]
+      },
+      {
+        name: "Black",
+        value: "#000000",
+        images: [
+          "/images/black-sneaker-1.jpg",
+          "/images/black-sneaker-2.jpg"
+        ]
+      }
+    ],
+
+    sizes: ["S", "M", "L", "XL"],
+    defaultColor: "White",
+    defaultSize: "41",
+    rating: 4.7,
+    reviewsCount: 540,
+    inStock: true,
+    category: "Shoes",
+    brand: "StepUp",
+    images: [
+      "/images/sneaker-main-1.jpg",
+      "/images/sneaker-main-2.jpg"
+    ]
+  },
+  {
+    id: 6,
+    name: "Classic Sneakers",
+    price: 49.99,
+    section: "man",
+    currency: "USD",
+    discount: 5,
+    description: "Comfortable everyday sneakers with breathable mesh design.",
+
+    colors: [
+      {
+        name: "White",
+        value: "#ffffff",
+        images: [
+          Loose_Fitted_Shirt1,
+          Loose_Fitted_Shirt2,
+          Loose_Fitted_Shirt3,
+          Loose_Fitted_Shirt4,
+          Loose_Fitted_Shirt5
+        ]
+      },
+      {
+        name: "Black",
+        value: "#000000",
+        images: [
+          "/images/black-sneaker-1.jpg",
+          "/images/black-sneaker-2.jpg"
+        ]
+      }
+    ],
+
+    sizes: ["S", "M", "L", "XL"],
+    defaultColor: "White",
+    defaultSize: "41",
+    rating: 4.7,
+    reviewsCount: 540,
+    inStock: true,
+    category: "Shoes",
+    brand: "StepUp",
+    images: [
+      "/images/sneaker-main-1.jpg",
+      "/images/sneaker-main-2.jpg"
+    ]
+  },
 ];
 
 export const navBar=[

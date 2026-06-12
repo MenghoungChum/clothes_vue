@@ -54,8 +54,8 @@
             v-for="size in ['S', 'M', 'L', 'XL']"
             :key="size"
             class="w-17.5 h-full bg-gray-300 rounded-md flex justify-center items-center font-medium cursor-pointer",
-            :class="selectedSzie===size? 'ring-2 ring-black': ''"
-            @click="selectedSzie=size"
+            :class="selectedSize===size? 'ring-2 ring-black': ''"
+            @click="selectedSize=size"
           >
             {{ size }}
           </div>
@@ -80,7 +80,9 @@
 
       <!-- Actions -->
       <div class="w-full h-12.5 flex items-center gap-3 mt-7">
-        <button class="flex-1 h-full rounded-md bg-black text-white font-bold">
+        <button 
+        @click="cartStore.addToCart(product,selectedColor.name,selectedSize,quantity)"
+        class="flex-1 h-full rounded-md bg-black text-white font-bold cursor-pointer">
           Add to Cart
         </button>
         <div class="p-4 rounded-md bg-gray-100 flex justify-center items-center">
@@ -97,14 +99,14 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue"
+import { onMounted, ref, watch } from "vue"
 import { useRoute } from "vue-router"
 import { products } from "../data/data"
+import { useCartStore } from "../stores/cart"
 
   onMounted(() => {
     window.scrollTo({
       top: 0,
-      // behavior: "smooth"
     })
   })
 
@@ -112,23 +114,30 @@ const selectedColor=ref(null)
 const route=useRoute();
 const mainImage=ref(null)
 const product=ref(null)
-const selectedSzie=ref("M");
-let quantity=ref(1)
+const selectedSize=ref("");
+const quantity=ref(1)
 
 function selectColor(color){
   selectedColor.value=color
   mainImage.value=color.images[0]
 }
 
-onMounted(()=>{
-  const id=Number(route.params.id)
-  product.value = products.find(p=> p.id===id);
+watch(
+  () => route.params.id,
+  (newId) => {
+    const id = Number(newId)
+    product.value = products.find(p => p.id === id)
 
+    if (product.value) {
+      selectedColor.value = product.value.colors[0]
+      mainImage.value = product.value.colors[0].images[0]
+      selectedSize.value = "M"   // reset size
+      quantity.value = 1          // reset quantity
+    }
 
-  if(product.value){
-    selectedColor.value=product.value.colors[0];
-    mainImage.value=product.value.colors[0].images[0];
-  }
-})
-
+    window.scrollTo({ top: 0 })
+  },
+  { immediate: true } // runs on first load too, replaces onMounted
+)
+const cartStore=useCartStore()
 </script>
